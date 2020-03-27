@@ -12,6 +12,8 @@ warnings_are_errors: false
 after_success:
   - Rscript -e 'covr::codecov()'
 
+env:
+  - if [ "$TRAVIS_OS_NAME" == "osx" ]; then R_REMOTES_NO_ERRORS_FROM_WARNINGS="true"; fi
 
 #before_cache: Rscript -e 'remotes::install_cran("pkgdown")'
 #deploy:
