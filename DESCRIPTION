@@ -21,6 +21,7 @@ Suggests:
     ggseg3d,
     ggplot2,
     knitr,
+    tidyr,
     rmarkdown,
     covr,
     testthat (>= 2.1.0),
