@@ -40,8 +40,8 @@ library(ggseg)
 ggseg(atlas = hoCort, mapping = aes(fill = region)) +
   # scale_fill_brain("hoCort", package = "ggsegHO") + # no palette available
   theme(legend.position = "bottom",
-        legend.text = element_text(size = 9)) +
-  guides(fill = guide_legend(ncol = 3))
+        legend.text = element_text(size = 6)) +
+  guides(fill = guide_legend(ncol = 2))
 ```
 
 <img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
@@ -84,6 +84,6 @@ ggseg(atlas = hoCort, mapping = aes(fill = region)) +
 
 <!-- ``` -->
 
-Please note that the ‘ggsegDesterieux’ project is released with a
-[Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to
-this project, you agree to abide by its terms.
+Please note that the ‘ggsegHO’ project is released with a [Contributor
+Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project,
+you agree to abide by its terms.
