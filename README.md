@@ -16,6 +16,9 @@ coverage](https://codecov.io/gh/LCBC-UiO/ggsegHO/branch/master/graph/badge.svg)]
 This package contains dataset for plotting the Harvard-Oxford cortical
 atlas ggseg and ggseg3d.
 
+Makris,et al. (2006) Schizophrenia research 83(2-3):155-151
+[pubmed](https://doi.org/10.1016/j.schres.2005.11.020)
+
 ## Installation
 
 You can install the released version of ggsegHO from
