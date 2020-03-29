@@ -18,11 +18,11 @@ Depends: R (>= 2.10)
 LazyData: true
 Suggests:
     ggseg,
+    usethis,
     ggseg3d,
     ggplot2,
     knitr,
     tidyr,
-    usethis,
     rmarkdown,
     covr,
     testthat (>= 2.1.0),
