@@ -5,13 +5,13 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HO datasets for the ggseg-plotting tool • ggsegHO</title>
+<title>Harvard-Oxford datasets for the ggseg-plotting tool • ggsegHO</title>
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/cerulean/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="bootstrap-toc.css">
 <script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
-<script src="pkgdown.js"></script><meta property="og:title" content="HO datasets for the ggseg-plotting tool">
+<script src="pkgdown.js"></script><meta property="og:title" content="Harvard-Oxford datasets for the ggseg-plotting tool">
 <meta property="og:description" content="This is a support package for the ggseg, and ggseg3d packages.
     It contains the Harvard-Oxford cortical atlases to plot using functions from those two packages.">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
@@ -32,7 +32,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">ggsegHO</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.0.01</span>
       </span>
     </div>
 
@@ -73,26 +73,32 @@
 <!-- badges: start -->
 
 <p>This package contains dataset for plotting the Harvard-Oxford cortical atlas ggseg and ggseg3d.</p>
-<p>Makris,et al. (2006) Schizophrenia research 83(2-3):155-151 <a href="https://doi.org/10.1016/j.schres.2005.11.020">pubmed</a></p>
+<p>Makris,et al. (2006) Schizophrenia research 83(2-3):155-151 <a href="https://doi.org/10.1016/j.schres.2005.11.020">pubmed</a></p>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
 <p>You can install the released version of ggsegHO from <a href="https://github.com/">GitHub</a> with:</p>
-<div class="sourceCode" id="cb1"><pre class="r"><span class="co"># install.packages("remotes")</span>
-<span class="kw pkg">remotes</span><span class="kw ns">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"LCBC-UiO/ggsegHO"</span>)</pre></div>
+<div class="sourceCode" id="cb1"><pre class="downlit">
+<span class="co"># install.packages("remotes")</span>
+<span class="kw">remotes</span>::<span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"LCBC-UiO/ggsegHO"</span>)
+</pre></div>
 </div>
 <div id="example" class="section level2">
 <h2 class="hasAnchor">
 <a href="#example" class="anchor"></a>Example</h2>
 <p>This is a basic example which shows you how to solve a common problem:</p>
-<div class="sourceCode" id="cb2"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">ggsegHO</span>)</pre></div>
-<div class="sourceCode" id="cb3"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">ggseg</span>)
+<div class="sourceCode" id="cb2"><pre class="downlit">
+<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://github.com/LCBC-UiO/ggsegHO">ggsegHO</a></span>)
+</pre></div>
+<div class="sourceCode" id="cb3"><pre class="downlit">
+<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://github.com/LCBC-UiO/ggseg">ggseg</a></span>)
 
-<span class="fu"><a href="https://rdrr.io/pkg/ggseg/man/ggseg.html">ggseg</a></span>(<span class="kw">atlas</span> <span class="kw">=</span> <span class="no">hoCort</span>, <span class="kw">mapping</span> <span class="kw">=</span> <span class="fu">aes</span>(<span class="kw">fill</span> <span class="kw">=</span> <span class="no">region</span>)) +
-  <span class="co"># scale_fill_brain("hoCort", package = "ggsegHO") + # no palette available</span>
-  <span class="fu">theme</span>(<span class="kw">legend.position</span> <span class="kw">=</span> <span class="st">"bottom"</span>,
-        <span class="kw">legend.text</span> <span class="kw">=</span> <span class="fu">element_text</span>(<span class="kw">size</span> <span class="kw">=</span> <span class="fl">6</span>)) +
-  <span class="fu">guides</span>(<span class="kw">fill</span> <span class="kw">=</span> <span class="fu">guide_legend</span>(<span class="kw">ncol</span> <span class="kw">=</span> <span class="fl">2</span>))</pre></div>
+<span class="fu"><a href="https://rdrr.io/pkg/ggseg/man/ggseg.html">ggseg</a></span>(atlas = <span class="kw">hoCort</span>, mapping = <span class="fu">aes</span>(fill = <span class="kw">region</span>)) <span class="op">+</span>
+  <span class="fu"><a href="https://rdrr.io/pkg/ggseg/man/scale_brain.html">scale_fill_brain</a></span>(<span class="st">"hoCort"</span>, package = <span class="st">"ggsegHO"</span>) <span class="op">+</span>
+  <span class="fu">theme</span>(legend.position = <span class="st">"bottom"</span>,
+        legend.text = <span class="fu">element_text</span>(size = <span class="fl">6</span>)) <span class="op">+</span>
+  <span class="fu">guides</span>(fill = <span class="fu">guide_legend</span>(ncol = <span class="fl">2</span>))
+</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-3-1.png" width="100%"></p>
 <!-- ```{r "noneval", eval=FALSE} -->
 <!-- library(ggseg3d) -->
@@ -155,6 +161,9 @@
 <li><a href="https://ci.appveyor.com/project/LCBC-UiO/ggsegHO"><img src="https://ci.appveyor.com/api/projects/status/github/LCBC-UiO/ggsegHO?branch=master&amp;svg=true" alt="AppVeyor build status"></a></li>
 <li><a href="https://travis-ci.com/LCBC-UiO/ggsegHO"><img src="https://travis-ci.com/LCBC-UiO/ggsegHO.svg?branch=master" alt="Travis build status"></a></li>
 <li><a href="https://codecov.io/gh/LCBC-UiO/ggsegHO?branch=master"><img src="https://codecov.io/gh/LCBC-UiO/ggsegHO/branch/master/graph/badge.svg" alt="Codecov test coverage"></a></li>
+<li><a href="https://github.com/LCBC-UiO/ggsegHO/actions"><img src="https://github.com/LCBC-UiO/ggsegHO/workflows/R-CMD-check/badge.svg" alt="R build status"></a></li>
+<li><a href="https://www.tidyverse.org/lifecycle/#maturing"><img src="https://img.shields.io/badge/lifecycle-maturing-blue.svg" alt="Lifecycle: maturing"></a></li>
+<li><a href="https://CRAN.R-project.org/package=ggsegHO"><img src="https://www.r-pkg.org/badges/version/ggsegHO" alt="CRAN status"></a></li>
 </ul>
 </div>
 </div>
@@ -166,7 +175,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.0.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
 </div>
 
       </footer>
