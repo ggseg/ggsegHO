@@ -22,7 +22,7 @@ status](https://www.r-pkg.org/badges/version/ggsegHO)](https://CRAN.R-project.or
 This package contains dataset for plotting the Harvard-Oxford cortical
 atlas ggseg and ggseg3d.
 
-Makris,et al. (2006) Schizophrenia research 83(2-3):155-151
+Makris,et al. (2006) Schizophrenia research 83(2-3):155-151
 [pubmed](https://doi.org/10.1016/j.schres.2005.11.020)
 
 ## Installation
