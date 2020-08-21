@@ -11,12 +11,18 @@ status](https://ci.appveyor.com/api/projects/status/github/LCBC-UiO/ggsegHO?bran
 status](https://travis-ci.com/LCBC-UiO/ggsegHO.svg?branch=master)](https://travis-ci.com/LCBC-UiO/ggsegHO)
 [![Codecov test
 coverage](https://codecov.io/gh/LCBC-UiO/ggsegHO/branch/master/graph/badge.svg)](https://codecov.io/gh/LCBC-UiO/ggsegHO?branch=master)
+[![R build
+status](https://github.com/LCBC-UiO/ggsegHO/workflows/R-CMD-check/badge.svg)](https://github.com/LCBC-UiO/ggsegHO/actions)
+[![Lifecycle:
+maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/ggsegHO)](https://CRAN.R-project.org/package=ggsegHO)
 <!-- badges: end -->
 
 This package contains dataset for plotting the Harvard-Oxford cortical
 atlas ggseg and ggseg3d.
 
-Makris,et al. (2006) Schizophrenia research 83(2-3):155-151
+Makris,et al. (2006) Schizophrenia research 83(2-3):155-151
 [pubmed](https://doi.org/10.1016/j.schres.2005.11.020)
 
 ## Installation
@@ -41,7 +47,7 @@ library(ggsegHO)
 library(ggseg)
 
 ggseg(atlas = hoCort, mapping = aes(fill = region)) +
-  # scale_fill_brain("hoCort", package = "ggsegHO") + # no palette available
+  scale_fill_brain("hoCort", package = "ggsegHO") +
   theme(legend.position = "bottom",
         legend.text = element_text(size = 6)) +
   guides(fill = guide_legend(ncol = 2))
