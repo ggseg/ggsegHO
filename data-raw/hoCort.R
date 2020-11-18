@@ -32,4 +32,6 @@ hoCort <- hoCort %>%
 ggseg(atlas = hoCort, mapping = aes(fill = region)) +
   scale_fill_brain("hoCort", package = "ggsegHO")
 
+hoCort <- as_brain_atlas(hoCort)
+hoCort$palette <- brain_pals$hoCort
 usethis::use_data(hoCort, internal = FALSE, overwrite = TRUE, compress = "xz")

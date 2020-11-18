@@ -1,22 +1,17 @@
 # ggseg ----
-context("test-adapt_scales")
-test_that("Check that ggseg:::adapt_scales is working", {
-  expect_equal(mode(ggseg:::adapt_scales(unnest(hoCort, ggseg))), "list")
-})
-
 context("test-palettes")
 test_that("check new palettes work", {
   expect_equal(length(brain_pal("hoCort", package = "ggsegHO")), 120)
 
   expect_error(brain_pal("hoCort"), "not a valid")
 
-  expect_true(all(names(brain_pal("hoCort", package = "ggsegHO")) %in% hoCort$region))
+  expect_true(all(names(brain_pal("hoCort", package = "ggsegHO")) %in% brain_regions(hoCort)))
 })
 
 context("test-ggseg-atlas")
 test_that("atlases are true ggseg atlases", {
 
-  expect_true(is_ggseg_atlas(hoCort))
+  expect_true(is_brain_atlas(hoCort))
 
 })
 

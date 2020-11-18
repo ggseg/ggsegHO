@@ -10,7 +10,8 @@ knitr::opts_chunk$set(
   comment = "#>",
   fig.path = "man/figures/README-",
   fig.width = 6,
-  out.width = "100%"
+  out.width = "100%",
+  fig.retina = 3
 )
 devtools::load_all(".")
 ```
@@ -51,12 +52,10 @@ library(ggsegHO)
 ```{r, fig.height=10}
 library(ggseg)
 
-ggseg(atlas = hoCort, mapping = aes(fill = region)) +
-  scale_fill_brain("hoCort", package = "ggsegHO") +
+plot(hoCort) +
   theme(legend.position = "bottom",
         legend.text = element_text(size = 6)) +
-  guides(fill = guide_legend(ncol = 2))
-
+  guides(fill = guide_legend(ncol = 3))
 ```
 
 <!-- ```{r "noneval", eval=FALSE} -->
