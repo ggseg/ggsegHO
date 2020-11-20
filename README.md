@@ -45,6 +45,7 @@ library(ggsegHO)
 
 ``` r
 library(ggseg)
+#> Loading required package: ggplot2
 
 plot(hoCort) +
   theme(legend.position = "bottom",
