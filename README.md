@@ -5,12 +5,6 @@
 
 <!-- badges: start -->
 
-[![Codecov test
-coverage](https://codecov.io/gh/LCBC-UiO/ggsegHO/branch/master/graph/badge.svg)](https://codecov.io/gh/LCBC-UiO/ggsegHO?branch=master)
-[![Lifecycle:
-maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
-[![CRAN
-status](https://www.r-pkg.org/badges/version/ggsegHO)](https://CRAN.R-project.org/package=ggsegHO)
 [![R-CMD-check](https://github.com/ggseg/ggsegHO/workflows/R-CMD-check/badge.svg)](https://github.com/ggseg/ggsegHO/actions)
 [![DOI](https://zenodo.org/badge/250284032.svg)](https://zenodo.org/badge/latestdoi/250284032)
 
@@ -55,6 +49,8 @@ library(ggsegHO)
 
 ``` r
 library(ggseg)
+#> Warning: package 'ggseg' was built under R version 4.1.1
+#> Loading required package: ggplot2
 library(ggplot2)
 
 plot(hoCort) +
